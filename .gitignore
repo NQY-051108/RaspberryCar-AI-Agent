@@ -1,0 +1,78 @@
+# Proposed RaspberryCar-AI-Agent root .gitignore
+# Model distribution policy: GitHub Releases, not binary files in Git.
+
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+*.swp
+*.tmp
+*.bak
+
+# Secrets and private machine configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.ppk
+id_rsa
+id_ed25519
+pi_deploy_ed25519
+WinSCP.ini
+HANDOFF_CONTEXT.md
+
+# Models and offline installation packages: distribute separately
+*.onnx
+*.pt
+*.pth
+*.whl
+pi_deploy.zip
+wheels_pi/
+
+# Runtime outputs (retain selected results under docs/experiments)
+*.log
+runs/
+car_data/
+captures/
+predictions/
+out/
+pi_deploy/out/
+*.mp4
+*.avi
+*.mkv
+camera_test_*.jpg
+camera*_20*.jpg
+
+# Raw datasets; keep example YAML and class configuration in training/
+/datasets/
+/data/raw/
+
+# Historical and duplicate workspace material
+legacy_car_server/
+remote_snapshot/
+car_control_bookworm/
+py_xrservo/
+py_xrservo.tar.gz
+legacy_camera_capture.py
+repository_audit_*/

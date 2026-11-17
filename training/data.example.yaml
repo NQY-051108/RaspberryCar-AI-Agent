@@ -1,0 +1,29 @@
+# Traffic-sign detection dataset — Ultralytics / YOLOv8
+# 20 classes. The class-index order below MUST stay in sync with
+# labels/train/classes.txt and labels/val/classes.txt.
+# Copy this file to datasets/data.yaml, next to images/ and labels/.
+# Omit path so Ultralytics resolves images relative to this YAML's directory.
+train: images/train
+val: images/val
+
+names:
+  0: No_Right_Turn
+  1: No_Left_Turn
+  2: Pedestrian_Crossing
+  3: Red_Light
+  4: Yellow_Light
+  5: Green_Light
+  6: National_Highway
+  7: Gas_Station
+  8: Countdown_Signal
+  9: Traffic_Sinals_Ahead
+  10: Parking
+  11: Go_Straight_or_Turn_Right
+  12: Danger
+  13: Proceed_Straight
+  14: Turn_Right
+  15: No_Entry
+  16: Slow_Down
+  17: Accident_Blackspot
+  18: Road_Work_Slow_Down
+  19: School

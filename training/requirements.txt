@@ -1,0 +1,6 @@
+ultralytics==8.4.176
+PyYAML>=6.0
+onnx>=1.16
+onnxslim>=0.1
+onnxruntime
+# Install a compatible PyTorch/CUDA build following pytorch.org first.

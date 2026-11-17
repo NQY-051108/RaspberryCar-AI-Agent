@@ -1,0 +1,17 @@
+[Unit]
+Description=YOLOv8 traffic-sign camera demo (web stream on port 8080)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/RaspberryCar-AI-Agent/pi_deploy
+ExecStart=/home/pi/pi_venv/bin/python -u /home/pi/RaspberryCar-AI-Agent/pi_deploy/pi_camera_demo.py --model best_320.onnx --camera 0 --port 8080
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
